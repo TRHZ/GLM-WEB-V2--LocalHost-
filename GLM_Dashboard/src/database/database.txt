@@ -1,0 +1,23 @@
+-- Crear la base de datos
+CREATE DATABASE inventory_management;
+
+-- Seleccionar la base de datos
+USE inventory_management;
+
+-- Crear la tabla products
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    entry_date DATE NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    provider VARCHAR(255) NOT NULL,
+    stock_min INT NOT NULL,
+    current_stock INT NOT NULL,
+    max_stock INT NOT NULL
+);
+
+-- Insertar algunos datos de ejemplo (opcional)
+INSERT INTO products (name, entry_date, price, provider, stock_min, current_stock, max_stock)
+VALUES ('Producto A', '2024-05-29', 10.50, 'Proveedor 1', 5, 20, 50),
+       ('Producto B', '2024-05-28', 20.00, 'Proveedor 2', 10, 30, 100),
+       ('Producto C', '2024-05-27', 15.75, 'Proveedor 3', 7, 25, 60);
