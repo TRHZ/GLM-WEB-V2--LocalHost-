@@ -18,6 +18,10 @@
     - [4.1.1. Agregar Producto:](#411-agregar-producto)
     - [4.1.2. Visualizar Información en el Dashboard:](#412-visualizar-información-en-el-dashboard)
 - [5. Descripción de las Pruebas y Cómo Ejecutarlas](#5-descripción-de-las-pruebas-y-cómo-ejecutarlas)
+  - [5.1. Estructura de las Pruebas](#51-estructura-de-las-pruebas)
+  - [5.2. Configuración de Pruebas en setupTest.js](#52-configuración-de-pruebas-en-setuptestjs)
+    - [5.2.1. Instalación de Dependencias para Pruebas](#521-instalación-de-dependencias-para-pruebas)
+  - [5.3. Ejecutar las Pruebas](#53-ejecutar-las-pruebas)
 
 
 ## 1.1. Descripción del Proyecto
@@ -116,3 +120,26 @@ Los productos con stock excesivo aparecerán en la sección Over Stock.
 Los productos más recientes serán listados en la sección Recent.
 La gráfica de Proveedores mostrará la cantidad de compras realizadas a cada proveedor.
 # 5. Descripción de las Pruebas y Cómo Ejecutarlas
+
+En este proyecto, se han implementado una prueba unitaria y de integración para asegurar que los componentes y funcionalidades trabajen correctamente. Estas pruebas están configuradas para ejecutarse en el entorno del frontend utilizando Jest y React Testing Library.
+## 5.1. Estructura de las Pruebas
+
+Las pruebas se encuentran en el siguiente directorio:
+- Frontend:
+- Las pruebas están ubicadas en GLM_Dashboard/src/test/. [test](src/test/)
+## 5.2. Configuración de Pruebas en setupTest.js
+
+Para asegurar que las pruebas se ejecuten correctamente, se ha configurado un archivo setupTest.js que incluye las configuraciones necesarias.
+
+### 5.2.1. Instalación de Dependencias para Pruebas
+Antes de ejecutar las pruebas, asegúrate de que todas las dependencias necesarias estén instaladas. Si seguiste las instrucciones de instalación previamente mencionadas, ya deberías tener todo lo necesario. Si no, puedes instalar las dependencias de pruebas con el siguiente comando en el frontend:
+
+    cd GLM_Dashboard
+    npm install
+
+## 5.3. Ejecutar las Pruebas
+
+    npm run test
+
+Este comando ejecutará todas las pruebas en el proyecto utilizando Jest y mostrará un reporte en la terminal.
+Como recordatorio, debes de estar en la carpeta de GLM_Dashboard para poder correr la prueba

@@ -32,14 +32,14 @@ const AddScreen: React.FC = () => {
             },
             body: JSON.stringify(formData)
         })
-        .then(response => response.text())
-        .then(data => {
-            alert(data);
-            navigate('/');  // Navigate to Dashboard after submitting
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+            .then(response => response.text())
+            .then(data => {
+                alert(data);
+                navigate('/');  // Navigate to Dashboard after submitting
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
     };
 
     return (
