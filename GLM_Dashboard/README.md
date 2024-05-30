@@ -21,14 +21,17 @@
 
 
 ## 1.1. Descripción del Proyecto
+
 Este proyecto es un gestor de inventarios diseñado para empacadoras de frutas y verduras. Permite a los usuarios gestionar el inventario, visualizar productos con stock bajo, productos con stock excesivo, los 15 productos más recientes y un gráfico de proveedores con la cantidad de compras realizadas.
 
 ### 1.1.1. Arquitectura del Proyecto
+
 Frontend: Desarrollado con React y TypeScript.
 Backend: Implementado con Node.js y Express.
 Base de Datos: MySQL para el almacenamiento de datos.
 
 ### 1.1.2. Tecnologías Utilizadas
+
 Frontend: React, TypeScript, Vite
 Backend: Node.js, Express
 Base de Datos: MySQL
@@ -36,6 +39,7 @@ Gráficas: Chart.js y react-chartjs-2
 Ruteo: React Router DOM
 
 ## 1.2. Estructura del Proyecto
+
 El proyecto está dividido en dos partes principales:
 
 - **Backend**: Manejado por Node.js
@@ -53,8 +57,8 @@ El proyecto está dividido en dos partes principales:
 ### 1.3.2. Instalación
 
 1. Clona el repositorio:
-    git clone https://github.com/tu_usuario/tu_repositorio.git
-    cd tu_repositorio
+    git clone https://github.com/TRHZ/GLM-WEB-V2--LocalHost-.git
+    cd GLM-WEB-V2--LocalHost-
 2. Instala las dependencias del Backend:
     cd GLM_Backend
     npm install
@@ -66,6 +70,7 @@ El proyecto está dividido en dos partes principales:
     npm install
 
 # 2. Ejecución
+
 1. Inicia Apache y MySQL en XAMPP
 2. Inicia el servidor del Backend
     cd GLM_Backend
@@ -78,24 +83,33 @@ El proyecto está dividido en dos partes principales:
     npm start
 
 # 3. Uso del Proyecto
+
 ## 3.1. Pantallas Principales
+
 ### 3.1.1. Dashboard
+
 Low Stock: Muestra los productos con stock bajo.
 Over Stock: Muestra los productos con stock excesivo.
 Recent: Lista de los 15 productos más recientes.
 Proveedores: Gráfica de barras con la cantidad de compras a cada proveedor.
 ### 3.1.2. AddScreen
+
 Permite ingresar nuevos productos al inventario.
 Al enviar el formulario, redirige de nuevo al Dashboard donde se pueden visualizar los productos ingresados.
 # 4. Prototipos de la Vista
-[Link]
+
+[docs](docs/GreenLink%20Manager.png)
+
 ## 4.1. Guía Paso a Paso
+
 ### 4.1.1. Agregar Producto:
+
 Navega a la pantalla AddScreen.
 Ingresa los detalles del producto (Nombre, Fecha de Entrada, ID, Precio, Proveedor, Stock Mínimo y Stock Actual).
 Haz clic en "Add".
 Serás redirigido al Dashboard donde podrás ver el producto recién agregado.
 ### 4.1.2. Visualizar Información en el Dashboard:
+
 En el Dashboard, puedes ver las secciones de Low Stock, Over Stock, Recent y Proveedores.
 Los productos con stock bajo aparecerán en la sección Low Stock.
 Los productos con stock excesivo aparecerán en la sección Over Stock.
