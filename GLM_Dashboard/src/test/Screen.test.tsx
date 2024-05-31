@@ -1,10 +1,10 @@
-import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
-import DashboardScreen from '../screens/Dashboard';
-import { BrowserRouter as Router } from 'react-router-dom';
-import '@testing-library/jest-dom';  // Asegúrate de importar jest-dom
+import React from 'react';  // Importa React
+import { render, screen, waitFor } from '@testing-library/react';  // Importa funciones de testing library
+import DashboardScreen from '../screens/Dashboard';  // Importa la pantalla del dashboard
+import { BrowserRouter as Router } from 'react-router-dom';  // Importa el Router de React Router
+import '@testing-library/jest-dom';  // Importa jest-dom para mejores matchers
 
-// Simular ResizeObserver
+// Simula ResizeObserver
 class ResizeObserver {
     observe() { }
     unobserve() { }
